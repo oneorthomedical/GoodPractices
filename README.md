@@ -1,5 +1,5 @@
 # GoodPractices
-Règle de codage et bonne pratique appliquée aux projets numérique de Oneortho pour une meilleure visibilité.
+Règle de codage et bonne pratique appliqués aux projets numérique de Oneortho pour une meilleure visibilité.
 
 **Objectif :**
 
