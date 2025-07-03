@@ -1,5 +1,4 @@
 
-
 ## **Objective**
 
 The objective of this document is to unify the source code of all Oneortho’s digital applications by adopting clear coding standards, structured version control practices, and efficient development workflows.
@@ -18,7 +17,6 @@ This will:
 2. [Git Best Practices](#git-best-practices)  
 3. [Git Rules](#git-rules)  
 4. [Learn Git](#learn-git)  
-
 ---
 
 ## **Code Best Practices**
@@ -48,7 +46,10 @@ This will:
   ✅ Example: `feature/add-3d-planning-module` or `bugfix/fix-upload-error`.
 
 - Commit often with clear, descriptive messages:  
-  ✅ Example: `Fix patient scan upload timeout error`
+  ✅ Example: `🐛 [PROJ-1234] Fix patient scan upload timeout error`
+
+- Include a **Gitmoji** and the **Jira Task ID** in each commit message.  
+  ✅ Example: `✨ [PROJ-5678] Add 3D rotation for knee implant`
 
 - Sync your branch with `main` or `develop` regularly to avoid large conflicts.
 
@@ -70,8 +71,12 @@ This will:
 
 - **Commit Message Format**  
   - Use the present tense: *Add*, *Fix*, *Update*.
+  - Add a **Gitmoji** to clarify the type of change.
+  - Include the Jira Task ID in square brackets.
   - Keep the first line under 50 characters.
   - Optionally add a detailed description below if needed.
+
+  ✅ Example: `📝 [DOC-101] Update README with new instructions`
 
 - **Merge Rules**  
   - Only merge when the CI/CD pipeline passes.
@@ -88,21 +93,23 @@ Here are some helpful links and commands to get started or refresh your Git skil
 
 - [Atlassian Git Tutorials](https://www.atlassian.com/git/tutorials)
 - [Git Handbook by GitHub](https://guides.github.com/introduction/git-handbook/)
+- [Gitmoji Guide](https://gitmoji.dev/)
 
 **Common commands:**
 
 ```bash
-git status           # Check changes
-git checkout -b my-branch   # Create and switch to new branch
-git add .            # Stage all changes
-git commit -m "Add new feature"
-git pull origin main # Get latest changes from main
-git push origin my-branch   # Push changes
+git status                    # Check changes
+git checkout -b my-branch     # Create and switch to new branch
+git add .                     # Stage all changes
+git commit -m "✨ [PROJ-5678] Add new feature"
+git pull origin main          # Get latest changes from main
+git push origin my-branch     # Push changes
 ````
+
+
 
 ---
 
 ## **Contact**
 
 If you have questions, suggestions, or improvements, feel free to open a discussion or reach out to the project maintainers.
-
